@@ -1,0 +1,101 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header button {
+  width: 100%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ImageCard {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.ImageCard .title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.ImageCard .subtitle {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 830px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .column {
+    width: 100%;
+  }
+}
+
